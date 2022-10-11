@@ -8,7 +8,7 @@
     Для |x| <= 1 возможно найти сумму с точностью e.
     Для |x| > 1  возможно найти сумму по i-ый член последовательности с точностью e.
 Сайт, где можно проверить последовательность:
-https://www.kontrolnaya-rabota.ru/s/ryad/summa/?infinity=0&nm=&function=%28-1%29%5E%28n+-+1%29+*+%28%281%5En%29%29%2Fn&N=n&n0=1
+https://www.kontrolnaya-rabota.ru/s/ryad/summa/?infinity=0&nm=&function=%28-1%29%5E%28n+-+1%29%28%28%280.1%29%5En%29%29%2Fn&N=n&n0=1
 """
 import math as m
 
