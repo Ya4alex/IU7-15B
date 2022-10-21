@@ -1,4 +1,5 @@
 import math as m
+
 # Все то же самое, только проще последовательность
 # (1 / 3) ** n / n!
 e = abs(float(input('Точность (1e-10): ') or 1e-10))
@@ -15,9 +16,11 @@ for i in range(1, maxi + 1):
     t = m.pow(1 / 3, i) / m.factorial(i)
     s += t
     if not (i + 1) % h:
-        print(f'║{i:^12.6g}'
-              f'║{t:^+16.{9 if abs(t) >= 1e7 or abs(t) <= 1e-2 else 12}g}'
-              f'║{s:^+16.{9 if abs(s) >= 1e7 or abs(s) <= 1e-2 else 12}g}║')
+        print(
+            f'║{i:^12.6g}'
+            f'║{t:^+16.{9 if abs(t) >= 1e7 or abs(t) <= 1e-2 else 12}g}'
+            f'║{s:^+16.{9 if abs(s) >= 1e7 or abs(s) <= 1e-2 else 12}g}║'
+        )
     if t <= e:
         is_done = True
         break
