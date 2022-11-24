@@ -48,6 +48,6 @@ print('\nD:')
 for i in range(Hd):
     print(*[f"{j:<6}" for j in d[i]])
 
-print('\nI:\n', *map(lambda x: x - 1, i_mas))
+print('\nI:\n', *map(lambda x: x + 1, i_mas))
 print('\nR:\n', *r)
 print(f"\nСреднее значение:\n{sum(r) / len(r):g}")  # подсчёт среднего
